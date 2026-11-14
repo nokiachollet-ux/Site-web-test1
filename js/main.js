@@ -1,5 +1,5 @@
 // Adresse e-mail qui recevra les demandes du formulaire de contact
-const EMAIL_CONTACT = "contact@vert-et-toit.fr";
+const EMAIL_CONTACT = "contact@bourbaki64.fr";
 
 document.addEventListener("DOMContentLoaded", () => {
   // Menu mobile

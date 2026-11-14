@@ -1,4 +1,4 @@
-# Site web – Vert & Toit (espaces verts & toiture)
+# Site web – Bourbaki64 (espaces verts & toiture)
 
 Site vitrine statique (HTML/CSS/JS, sans dépendance) pour un auto-entrepreneur en espaces verts et travaux de toiture.
 
@@ -17,11 +17,11 @@ js/main.js           Menu mobile + formulaire de contact
 
 Remplacer dans tous les fichiers HTML (rechercher/remplacer) :
 
-- `Vert & Toit` / `Vert <span>&amp;</span> Toit` → nom de l'entreprise
-- `06 00 00 00 00` et `+33600000000` → numéro de téléphone
-- `contact@vert-et-toit.fr` → adresse e-mail (aussi dans `js/main.js`)
-- `Votre ville et ses environs (30 km)` → zone d'intervention
-- `SIRET : 000 000 000 00000` → numéro SIRET
+- `Bourbaki64` / `Vert <span>&amp;</span> Toit` → nom de l'entreprise
+- `06 39 98 64 64` et `+33639986464` (numéro fictif) → numéro de téléphone
+- `contact@bourbaki64.fr` → adresse e-mail (aussi dans `js/main.js`)
+- `Pau et 15 km alentour` → zone d'intervention
+- `SIRET : 912 345 678 00014` (fictif) → numéro SIRET
 
 ## Formulaire de contact
 
