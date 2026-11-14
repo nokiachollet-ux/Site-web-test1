@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact & devis gratuit | Bourbaki64 – Pau</title>
+  <meta name="description" content="Contactez-moi pour un devis gratuit en espaces verts ou travaux de toiture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg viewBox='0 0 40 40' aria-hidden='true'><path d='M4 20 20 6l16 14' fill='none' stroke='%2337424d' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M20 34c-7 0-10-6-8-12 6 0 10 4 8 12Zm0 0c7 0 10-6 8-12-6 0-10 4-8 12Z' fill='%232f6b3a'/></svg>">
+</head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 20 20 6l16 14" fill="none" stroke="#37424d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 34c-7 0-10-6-8-12 6 0 10 4 8 12Zm0 0c7 0 10-6 8-12-6 0-10 4-8 12Z" fill="#2f6b3a"/></svg><span>Bourbaki<em>64</em></span></a>
+    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li class="dropdown">
+          <button type="button" aria-expanded="false">Services</button>
+          <div class="dropdown__menu">
+            <a href="espaces-verts.html">Espaces verts</a>
+            <a href="toiture.html">Travaux de toiture</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="nav__cta actif">Contact &amp; devis</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero page-hero--contact">
+  <div class="container">
+    <div class="fil"><a href="index.html">Accueil</a> › Contact</div>
+    <h1>Contact &amp; devis gratuit</h1>
+    <p>Un projet, une question ? Remplissez le formulaire ou appelez-moi directement. Je vous réponds sous 48 h.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grille">
+    <aside class="coordonnees">
+      <h2 style="font-size:1.5rem">Mes coordonnées</h2>
+      <div class="coordonnees__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><div><strong>Téléphone</strong><a href="tel:+33639986464">06 39 98 64 64</a></div></div>
+      <div class="coordonnees__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><div><strong>E-mail</strong><a href="mailto:contact@bourbaki64.fr">contact@bourbaki64.fr</a></div></div>
+      <div class="coordonnees__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><div><strong>Zone d’intervention</strong>Pau et 15 km alentour</div></div>
+      <div class="coordonnees__item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><strong>Horaires</strong>Du lundi au samedi, 8 h – 19 h</div></div>
+    </aside>
+
+    <form class="formulaire" id="form-contact" novalidate>
+      <h2 style="font-size:1.5rem">Demande de devis</h2>
+      <div class="champs">
+        <div class="champ"><label for="nom">Nom et prénom *</label><input id="nom" name="nom" required autocomplete="name"></div>
+        <div class="champ"><label for="telephone">Téléphone *</label><input id="telephone" name="telephone" type="tel" required autocomplete="tel"></div>
+        <div class="champ"><label for="email">E-mail *</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+        <div class="champ"><label for="commune">Commune des travaux</label><input id="commune" name="commune" autocomplete="address-level2"></div>
+        <div class="champ champ--large">
+          <label for="service">Service concerné *</label>
+          <select id="service" name="service" required>
+            <option value="espaces-verts">Espaces verts</option>
+            <option value="toiture">Travaux de toiture</option>
+            <option value="les-deux">Les deux</option>
+            <option value="autre">Autre demande</option>
+          </select>
+        </div>
+        <div class="champ champ--large"><label for="message">Votre projet *</label><textarea id="message" name="message" required placeholder="Décrivez vos travaux : surface, type de prestation, délai souhaité…"></textarea></div>
+      </div>
+      <button type="submit" class="btn btn--primaire">Envoyer ma demande</button>
+      <p class="formulaire__note">Vos informations servent uniquement à répondre à votre demande.</p>
+      <p class="message-ok">Votre messagerie va s’ouvrir avec votre demande pré-remplie. Il ne reste qu’à cliquer sur « Envoyer ».</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grille">
+      <div>
+        <a href="index.html" class="logo"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 20 20 6l16 14" fill="none" stroke="#37424d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 34c-7 0-10-6-8-12 6 0 10 4 8 12Zm0 0c7 0 10-6 8-12-6 0-10 4-8 12Z" fill="#2f6b3a"/></svg><span>Bourbaki<em>64</em></span></a>
+        <p>Auto-entrepreneur spécialisé dans la création et l’entretien d’espaces verts et les travaux de toiture. Un seul interlocuteur, du jardin jusqu’au toit.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="espaces-verts.html">Espaces verts</a></li>
+          <li><a href="toiture.html">Travaux de toiture</a></li>
+          <li><a href="contact.html">Contact &amp; devis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+33639986464">06 39 98 64 64</a></li>
+          <li><a href="mailto:contact@bourbaki64.fr">contact@bourbaki64.fr</a></li>
+          <li>Pau et 15 km alentour</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bas">
+      <span>© <span class="annee">2026</span> Bourbaki64 – Entreprise individuelle · SIRET : 912 345 678 00014</span>
+      <span>TVA non applicable, art. 293 B du CGI</span>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
