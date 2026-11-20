@@ -15,8 +15,7 @@ Site statique (HTML, CSS, JavaScript) avec animations GSAP + ScrollTrigger.
 - `js/main.js` — animations, menu mobile, FAQ, formulaire
 - `js/vendor/` — GSAP 3.12.5 et ScrollTrigger (copie locale)
 
-## À compléter avant la mise en ligne
-Remplacer dans tous les fichiers : `[ADRESSE EMAIL]`, `[NUMÉRO DE TÉLÉPHONE]`, `[ADRESSE / VILLE]`,
-ainsi que les informations légales entre crochets de `mentions-legales.html`.
+## Coordonnées
+Les coordonnées et informations légales actuelles sont fictives (exemple) : à remplacer par les vraies avant diffusion publique.
 
 Le formulaire de contact ouvre la messagerie du visiteur avec le message prérempli (aucun serveur nécessaire).
