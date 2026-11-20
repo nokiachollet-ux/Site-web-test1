@@ -1,34 +1,22 @@
-# Site web – Bourbaki64 (espaces verts & toiture)
+# MasterIA — site vitrine
 
-Site vitrine statique (HTML/CSS/JS, sans dépendance) pour un auto-entrepreneur en espaces verts et travaux de toiture.
+Site statique (HTML, CSS, JavaScript) avec animations GSAP + ScrollTrigger.
+
+## Pages
+- `index.html` — Accueil
+- `apropos.html` — À propos
+- `formations.html` — Formations
+- `services.html` — Services aux entreprises
+- `contact.html` — Contact (formulaire)
+- `mentions-legales.html` — Mentions légales & confidentialité
 
 ## Structure
+- `css/style.css` — styles et responsive
+- `js/main.js` — animations, menu mobile, FAQ, formulaire
+- `js/vendor/` — GSAP 3.12.5 et ScrollTrigger (copie locale)
 
-```
-index.html           Accueil (présentation + les 2 services)
-espaces-verts.html   Service 1 : espaces verts
-toiture.html         Service 2 : travaux de toiture
-contact.html         Coordonnées + formulaire de demande de devis
-css/style.css        Styles (couleurs modifiables en haut du fichier)
-js/main.js           Menu mobile + formulaire de contact
-```
+## À compléter avant la mise en ligne
+Remplacer dans tous les fichiers : `[ADRESSE EMAIL]`, `[NUMÉRO DE TÉLÉPHONE]`, `[ADRESSE / VILLE]`,
+ainsi que les informations légales entre crochets de `mentions-legales.html`.
 
-## À personnaliser
-
-Remplacer dans tous les fichiers HTML (rechercher/remplacer) :
-
-- `Bourbaki64` / `Vert <span>&amp;</span> Toit` → nom de l'entreprise
-- `06 39 98 64 64` et `+33639986464` (numéro fictif) → numéro de téléphone
-- `contact@bourbaki64.fr` → adresse e-mail (aussi dans `js/main.js`)
-- `Pau et 15 km alentour` → zone d'intervention
-- `SIRET : 912 345 678 00014` (fictif) → numéro SIRET
-
-## Formulaire de contact
-
-Le formulaire ouvre la messagerie du visiteur avec la demande pré-remplie (fonctionne sans serveur).
-Pour un envoi direct, on peut le brancher sur un service comme Formspree ou Netlify Forms.
-
-## Mise en ligne
-
-Ouvrir `index.html` dans un navigateur pour tester. Hébergement possible gratuitement via GitHub Pages
-(Settings → Pages → branche à publier).
+Le formulaire de contact ouvre la messagerie du visiteur avec le message prérempli (aucun serveur nécessaire).

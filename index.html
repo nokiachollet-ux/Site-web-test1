@@ -1,160 +1,395 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bourbaki64 – Espaces verts et toiture à Pau (64)</title>
-  <meta name="description" content="Bourbaki64, auto-entrepreneur à Pau : création et entretien d'espaces verts, travaux de toiture. Intervention dans un rayon de 15 km. Devis gratuit.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MasterIA — Formations IA et gestion d'entreprise augmentée</title>
+  <meta name="description" content="MasterIA forme aux outils d'intelligence artificielle et aide les entreprises à simplifier leur gestion grâce à l'IA.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="MasterIA — Formations IA et gestion d'entreprise augmentée">
+  <meta property="og:description" content="MasterIA forme aux outils d'intelligence artificielle et aide les entreprises à simplifier leur gestion grâce à l'IA.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23000'/%3E%3Ccircle cx='12' cy='12' r='7' fill='none' stroke='%23f5f5f7' stroke-width='1.6'/%3E%3Ccircle cx='12' cy='12' r='2.4' fill='%232997ff'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg viewBox='0 0 40 40' aria-hidden='true'><path d='M4 20 20 6l16 14' fill='none' stroke='%2337424d' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M20 34c-7 0-10-6-8-12 6 0 10 4 8 12Zm0 0c7 0 10-6 8-12-6 0-10 4-8 12Z' fill='%232f6b3a'/></svg>">
 </head>
 <body>
-<header class="header">
-  <div class="container header__inner">
-    <a href="index.html" class="logo"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 20 20 6l16 14" fill="none" stroke="#37424d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 34c-7 0-10-6-8-12 6 0 10 4 8 12Zm0 0c7 0 10-6 8-12-6 0-10 4-8 12Z" fill="#2f6b3a"/></svg><span>Bourbaki<em>64</em></span></a>
-    <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <nav class="nav" aria-label="Navigation principale">
-      <ul>
-        <li><a href="index.html" class="actif">Accueil</a></li>
-        <li class="dropdown">
-          <button type="button" aria-expanded="false">Services</button>
-          <div class="dropdown__menu">
-            <a href="espaces-verts.html">Espaces verts</a>
-            <a href="toiture.html">Travaux de toiture</a>
-          </div>
-        </li>
-        <li><a href="contact.html" class="nav__cta">Contact &amp; devis</a></li>
-      </ul>
+
+  <!-- Préchargeur -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__word"><span>M</span><span>a</span><span>s</span><span>t</span><span>e</span><span>r</span><span class="is-accent">I</span><span class="is-accent">A</span></div>
+    <div class="loader__bar"><i></i></div>
+  </div>
+
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- Navigation globale -->
+  <header class="gnav">
+    <div class="gnav__inner">
+      <a href="index.html" class="gnav__logo" aria-label="MasterIA, accueil">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/></svg>
+      </a>
+      <nav class="gnav__links" aria-label="Navigation principale">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html">Formations</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="gnav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span></button>
+    </div>
+    <nav class="gnav__mobile" id="menu-mobile" aria-label="Menu mobile">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html">Formations</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
     </nav>
-  </div>
-</header>
-<main>
+  </header>
 
-<section class="hero">
-  <div class="container">
-    <span class="eyebrow" style="color:#b9e3b2">Paysagiste &amp; couvreur à Pau (64)</span>
-    <h1>Du jardin jusqu’au toit,<br>un seul artisan de confiance.</h1>
-    <p class="lead">Création et entretien d’espaces verts, réparation et rénovation de toitures : je m’occupe de l’extérieur de votre maison à Pau et dans un rayon de 15 km, avec soin, réactivité et des prix justes.</p>
-    <div class="hero__actions">
-      <a href="contact.html" class="btn btn--primaire">Demander un devis gratuit</a>
-      <a href="#services" class="btn btn--contour">Découvrir mes services</a>
-    </div>
-    <div class="hero__badges">
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Devis gratuit sous 48 h</div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Particuliers &amp; professionnels</div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Pau &amp; 15 km alentour</div>
+  <!-- Bandeau d'annonce -->
+  <div class="strip">
+    <p><span class="new">Nouveau</span> Sessions de formation IA pour les équipes, en présentiel ou à distance. <a href="formations.html" class="link">Découvrir le programme&nbsp;›</a></p>
+  </div>
+
+  <!-- Navigation locale -->
+  <div class="lnav-wrap">
+    <div class="lnav">
+      <a href="#top" class="lnav__name">MasterIA</a>
+      <div class="lnav__right">
+        <a href="#formations" class="lnav__link">Formations</a>
+        <a href="#gestion" class="lnav__link">Gestion IA</a>
+        <a href="#methode" class="lnav__link">Méthode</a>
+        <a href="contact.html" class="pill pill--blue magnetic">Prendre rendez-vous</a>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="section section--alt" id="services">
-  <div class="container">
-    <div class="section__intro">
-      <span class="eyebrow">Mes services</span>
-      <h2>Deux métiers, une même exigence</h2>
-      <p>Que ce soit pour embellir votre jardin ou protéger votre maison, je vous accompagne de l’étude du projet jusqu’à la fin du chantier.</p>
-    </div>
-    <div class="services">
-      <article class="carte-service carte-service--vert">
-        <div class="carte-service__visuel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
-        <div class="carte-service__corps">
-          <h3>Espaces verts</h3>
-          <p>Création, aménagement et entretien de jardins pour les particuliers et les professionnels.</p>
-          <ul>
-            <li>Tonte, taille de haies et d’arbustes</li>
-            <li>Création de massifs et engazonnement</li>
-            <li>Élagage, abattage et débroussaillage</li>
-            <li>Contrats d’entretien à l’année</li>
-          </ul>
-          <a href="espaces-verts.html" class="btn btn--primaire">Voir les prestations</a>
+  <main id="top">
+    <span id="contenu" tabindex="-1"></span>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__stage">
+        <canvas class="hero__canvas" data-shape="sphere" aria-hidden="true"></canvas>
+        <div class="hero__halo" aria-hidden="true"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__label"><span class="mask"><span>MasterIA</span></span></p>
+        <h1 class="hero__title">
+          <span class="mask"><span>L'intelligence</span></span>
+          <span class="mask"><span>artificielle, <em>maîtrisée.</em></span></span>
+        </h1>
+        <p class="hero__sub"><span class="mask"><span>Apprenez l'IA. Simplifiez votre entreprise.</span></span></p>
+        <div class="hero__cta">
+          <span class="capsule">Formations &amp; accompagnement sur mesure</span>
+          <a href="#contact" class="pill pill--blue pill--lg magnetic">Prendre rendez-vous</a>
         </div>
-      </article>
-      <article class="carte-service carte-service--toit">
-        <div class="carte-service__visuel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 3l9 8"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-6h4v6"/><path d="M16 5V3h2v4"/></svg></div>
-        <div class="carte-service__corps">
-          <h3>Travaux de toiture</h3>
-          <p>Entretien, réparation et rénovation de votre couverture pour une maison saine et étanche.</p>
-          <ul>
-            <li>Réparation de fuites et remplacement de tuiles</li>
-            <li>Démoussage et traitement hydrofuge</li>
-            <li>Pose et nettoyage de gouttières</li>
-            <li>Rénovation et réfection de toiture</li>
-          </ul>
-          <a href="toiture.html" class="btn btn--toit">Voir les prestations</a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span>Défiler</span><i></i></div>
+    </section>
+
+    <!-- MANIFESTE -->
+    <section class="manifesto" id="apropos" aria-label="À propos">
+      <div class="container">
+        <p class="eyebrow">À propos</p>
+        <p class="manifesto__text" data-split>
+          MasterIA rend l'intelligence artificielle simple, utile et concrète. Nous formons celles et ceux qui veulent comprendre l'IA, et nous aidons les entreprises à mieux s'organiser grâce à elle.
+        </p>
+        <a href="apropos.html" class="link link--lg">Découvrir notre approche ›</a>
+      </div>
+    </section>
+
+    <!-- DEUX PILIERS -->
+    <section class="pillars band-carbon" aria-label="Nos deux expertises">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Deux expertises</p>
+          <h2 class="h-display">Apprendre.<br><span class="muted">Puis transformer.</span></h2>
+        </header>
+
+        <div class="pillars__grid">
+          <article class="frame frame--learn reveal-frame">
+            <div class="frame__visual parallax" data-speed="-0.12" aria-hidden="true">
+              <div class="screen">
+                <div class="screen__bar"><i></i><i></i><i></i></div>
+                <div class="screen__body">
+                  <div class="screen__msg screen__msg--user">Résume ce contrat en 5 points clés.</div>
+                  <div class="screen__msg screen__msg--ai">
+                    <span class="typing" data-text="1. Durée : 24 mois  ·  2. Préavis : 3 mois  ·  3. Tarif révisable chaque année  ·  4. Clause de confidentialité  ·  5. Résiliation possible sous conditions."></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame__copy">
+              <p class="product-label">Formations IA</p>
+              <h3 class="h-frame">Des cours clairs pour passer de la curiosité à la maîtrise.</h3>
+              <a href="formations.html" class="link">Voir les formations ›</a>
+            </div>
+          </article>
+
+          <article class="frame frame--manage reveal-frame">
+            <div class="frame__visual parallax" data-speed="-0.12" aria-hidden="true">
+              <svg class="chip" viewBox="0 0 300 300">
+                <defs>
+                  <linearGradient id="chipFace" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#2a2a2d"/><stop offset=".5" stop-color="#121214"/><stop offset="1" stop-color="#2a2a2d"/>
+                  </linearGradient>
+                  <radialGradient id="chipCore" cx=".5" cy=".5" r=".5">
+                    <stop offset="0" stop-color="#2997ff" stop-opacity=".55"/><stop offset="1" stop-color="#2997ff" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <g class="chip__pins" stroke="#6e6e73" stroke-width="3" stroke-linecap="round"></g>
+                <rect x="70" y="70" width="160" height="160" rx="22" fill="url(#chipFace)" stroke="#333336" stroke-width="1.5"/>
+                <rect x="84" y="84" width="132" height="132" rx="14" fill="none" stroke="#333336"/>
+                <circle class="chip__glow" cx="150" cy="150" r="70" fill="url(#chipCore)"/>
+                <text x="150" y="146" text-anchor="middle" fill="#f5f5f7" font-family="Inter, sans-serif" font-weight="600" font-size="30" letter-spacing="-.5">M·IA</text>
+                <text x="150" y="172" text-anchor="middle" fill="#86868b" font-family="Inter, sans-serif" font-size="11" letter-spacing="2">GESTION</text>
+              </svg>
+            </div>
+            <div class="frame__copy">
+              <p class="product-label">Gestion augmentée</p>
+              <h3 class="h-frame">L'IA au service de votre organisation, au quotidien.</h3>
+              <a href="services.html" class="link">Voir les services ›</a>
+            </div>
+          </article>
         </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section__intro">
-      <span class="eyebrow">Pourquoi me choisir</span>
-      <h2>Un artisan béarnais proche de vous</h2>
-    </div>
-    <div class="atouts">
-      <div class="atout"><div class="atout__icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div><h3>Devis gratuit</h3><p>Déplacement et devis détaillé offerts, sans engagement.</p></div>
-      <div class="atout"><div class="atout__icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Réactivité</h3><p>Réponse rapide et intervention dans les meilleurs délais.</p></div>
-      <div class="atout"><div class="atout__icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Interlocuteur unique</h3><p>Vous échangez directement avec la personne qui réalise les travaux.</p></div>
-      <div class="atout"><div class="atout__icone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Travail assuré</h3><p>Responsabilité civile professionnelle et garantie décennale.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--alt">
-  <div class="container">
-    <div class="section__intro" style="margin-bottom:0">
-      <span class="eyebrow">Zone d’intervention</span>
-      <h2>Pau et 15 km alentour</h2>
-      <p>J’interviens à Pau et dans les communes voisines : Lescar, Lons, Billère, Jurançon, Gelos, Bizanos, Idron, Lée, Serres-Castet, Montardon, Gan, Morlaàs… Vous êtes un peu plus loin ? Contactez-moi, on en parle.</p>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <h2>Un projet pour votre jardin ou votre toiture ?</h2>
-    <p>Décrivez-moi votre besoin, je vous recontacte rapidement avec un devis clair et sans surprise.</p>
-    <a href="contact.html" class="btn btn--primaire" style="background:#fff;color:var(--vert-fonce)">Demander un devis</a>
-    <a href="tel:+33639986464" class="btn btn--contour">Appeler le 06 39 98 64 64</a>
-  </div>
-</section>
-</main>
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grille">
-      <div>
-        <a href="index.html" class="logo"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 20 20 6l16 14" fill="none" stroke="#37424d" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 34c-7 0-10-6-8-12 6 0 10 4 8 12Zm0 0c7 0 10-6 8-12-6 0-10 4-8 12Z" fill="#2f6b3a"/></svg><span>Bourbaki<em>64</em></span></a>
-        <p>Auto-entrepreneur spécialisé dans la création et l’entretien d’espaces verts et les travaux de toiture. Un seul interlocuteur, du jardin jusqu’au toit.</p>
       </div>
-      <div>
-        <h3>Navigation</h3>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="espaces-verts.html">Espaces verts</a></li>
-          <li><a href="toiture.html">Travaux de toiture</a></li>
-          <li><a href="contact.html">Contact &amp; devis</a></li>
-        </ul>
+    </section>
+
+    <!-- PROGRAMME : défilement horizontal -->
+    <section class="program" id="formations" aria-label="Programme de formation">
+      <div class="program__pin">
+        <header class="program__head container">
+          <p class="eyebrow">Le programme</p>
+          <h2 class="h-display">Cinq étapes vers<br>la maîtrise de l'IA.</h2>
+        </header>
+        <div class="program__track">
+          <article class="course">
+            <span class="course__num">01</span>
+            <div>
+              <p class="course__level">Débutant</p>
+              <h3 class="course__title">Comprendre l'IA</h3>
+              <p class="course__text">Ce qu'est vraiment l'IA, ce qu'elle sait faire, ses limites et ses bons usages.</p>
+            </div>
+          </article>
+          <article class="course">
+            <span class="course__num">02</span>
+            <div>
+              <p class="course__level">Débutant</p>
+              <h3 class="course__title">Maîtriser les assistants</h3>
+              <p class="course__text">Rédiger de bonnes instructions, gagner du temps sur l'écrit, la recherche et l'analyse.</p>
+            </div>
+          </article>
+          <article class="course">
+            <span class="course__num">03</span>
+            <div>
+              <p class="course__level">Intermédiaire</p>
+              <h3 class="course__title">Automatiser son travail</h3>
+              <p class="course__text">Relier ses outils, supprimer les tâches répétitives et fiabiliser ses processus.</p>
+            </div>
+          </article>
+          <article class="course">
+            <span class="course__num">04</span>
+            <div>
+              <p class="course__level">Avancé</p>
+              <h3 class="course__title">Créer ses agents IA</h3>
+              <p class="course__text">Concevoir des assistants spécialisés adaptés à votre métier et à vos données.</p>
+            </div>
+          </article>
+          <article class="course">
+            <span class="course__num">05</span>
+            <div>
+              <p class="course__level">Avancé</p>
+              <h3 class="course__title">Piloter par la donnée</h3>
+              <p class="course__text">Transformer vos chiffres en tableaux de bord et en décisions éclairées.</p>
+            </div>
+          </article>
+          <article class="course course--cta">
+            <p class="product-label">Particuliers, indépendants, équipes</p>
+            <h3 class="course__title">Un parcours adapté à votre niveau.</h3>
+            <a href="formations.html" class="pill pill--blue magnetic">Voir le détail des formations</a>
+          </article>
+        </div>
+        <div class="program__progress" aria-hidden="true"><i></i></div>
       </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="tel:+33639986464">06 39 98 64 64</a></li>
-          <li><a href="mailto:contact@bourbaki64.fr">contact@bourbaki64.fr</a></li>
-          <li>Pau et 15 km alentour</li>
-        </ul>
+    </section>
+
+    <!-- GESTION : panneau + tuiles -->
+    <section class="manage" id="gestion" aria-label="Services de gestion">
+      <div class="container">
+        <div class="panel">
+          <header class="panel__head reveal">
+            <p class="eyebrow">Services aux entreprises</p>
+            <h2 class="h-panel">Moins de tâches répétitives.<br><span class="muted">Plus de temps pour l'essentiel.</span></h2>
+            <p class="panel__lead">Nous analysons votre fonctionnement, puis mettons en place des solutions d'IA simples, fiables et adaptées à votre activité.</p>
+          </header>
+
+          <div class="tiles">
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11.3 11.3l4.2 4.2M32.5 32.5l4.2 4.2M11.3 36.7l4.2-4.2M32.5 15.5l4.2-4.2"/><circle cx="24" cy="24" r="7"/></svg>
+              <h3 class="tile__stat">Automatisation</h3>
+              <p class="tile__text">Saisies, relances, classements : vos tâches répétitives s'exécutent seules.</p>
+            </article>
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M14 6h14l8 8v28H14z"/><path d="M28 6v8h8M19 24h12M19 30h12M19 36h7"/></svg>
+              <h3 class="tile__stat">Documents</h3>
+              <p class="tile__text">Devis, factures, comptes rendus et contrats générés ou analysés en un instant.</p>
+            </article>
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h32v20H22l-8 7v-7H8z"/><path d="M16 20h16M16 25h10"/></svg>
+              <h3 class="tile__stat">Relation client</h3>
+              <p class="tile__text">Un assistant qui répond à vos clients avec votre ton, à toute heure.</p>
+            </article>
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40h32"/><path d="M13 34V24M21 34V16M29 34V20M37 34V10"/></svg>
+              <h3 class="tile__stat">Pilotage</h3>
+              <p class="tile__text">Des tableaux de bord lisibles pour suivre votre activité en temps réel.</p>
+            </article>
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="14" width="24" height="22" rx="6"/><path d="M24 6v8M19 24h.01M29 24h.01M19 30h10"/></svg>
+              <h3 class="tile__stat">Agents sur mesure</h3>
+              <p class="tile__text">Des assistants conçus pour votre métier, connectés à vos outils.</p>
+            </article>
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l14 5v11c0 9-6 16-14 20-8-4-14-11-14-20V11z"/><path d="M18 24l4 4 8-8"/></svg>
+              <h3 class="tile__stat">Données protégées</h3>
+              <p class="tile__text">Des solutions choisies pour respecter la confidentialité de vos informations.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÉTHODE -->
+    <section class="method band-carbon" id="methode" aria-label="Notre méthode">
+      <div class="container method__grid">
+        <div class="method__sticky">
+          <p class="eyebrow">Notre méthode</p>
+          <h2 class="h-display">Simple.<br>Concrète.<br><span class="muted">Mesurable.</span></h2>
+          <div class="method__line" aria-hidden="true"><i></i></div>
+        </div>
+        <ol class="method__steps">
+          <li class="step">
+            <span class="step__num">Étape 1</span>
+            <h3 class="step__title">Diagnostic</h3>
+            <p class="step__text">Nous échangeons sur vos besoins, votre niveau et vos outils actuels pour identifier là où l'IA vous fera vraiment gagner du temps.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">Étape 2</span>
+            <h3 class="step__title">Plan sur mesure</h3>
+            <p class="step__text">Vous recevez un parcours de formation ou un plan de mise en place clair, priorisé et adapté à votre budget.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">Étape 3</span>
+            <h3 class="step__title">Formation &amp; mise en place</h3>
+            <p class="step__text">Cours pratiques, ateliers et déploiement des solutions, avec vos cas réels plutôt que des exemples théoriques.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">Étape 4</span>
+            <h3 class="step__title">Suivi</h3>
+            <p class="step__text">Nous restons à vos côtés pour ajuster, répondre à vos questions et faire évoluer vos usages.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- POUR QUI : surface claire -->
+    <section class="audience" aria-label="Pour qui">
+      <div class="container">
+        <header class="section-head section-head--dark reveal">
+          <p class="eyebrow eyebrow--dark">Pour qui ?</p>
+          <h2 class="h-display">Que vous appreniez<br>ou que vous dirigiez.</h2>
+        </header>
+        <div class="audience__grid">
+          <article class="pale-card reveal-card">
+            <p class="pale-card__label">Particuliers &amp; indépendants</p>
+            <h3 class="pale-card__title">Montez en compétences sur l'IA.</h3>
+            <ul class="pale-card__list">
+              <li>Cours individuels ou en petit groupe</li>
+              <li>Exercices pratiques sur vos propres usages</li>
+              <li>Rythme adapté à votre emploi du temps</li>
+            </ul>
+            <a href="formations.html" class="link link--cobalt">Découvrir les formations ›</a>
+          </article>
+          <article class="pale-card pale-card--dark reveal-card">
+            <p class="pale-card__label">Entreprises &amp; équipes</p>
+            <h3 class="pale-card__title">Formez vos équipes. Allégez votre gestion.</h3>
+            <ul class="pale-card__list">
+              <li>Formation des collaborateurs sur site ou à distance</li>
+              <li>Automatisation de vos processus internes</li>
+              <li>Accompagnement dans la durée</li>
+            </ul>
+            <a href="services.html" class="link">Découvrir les services ›</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section class="cta" id="contact" aria-label="Contact">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <p class="eyebrow">Contact</p>
+        <h2 class="cta__title" data-fill>Prêt à passer à l'IA&nbsp;?</h2>
+        <p class="cta__sub">Parlons de vos objectifs. Premier échange sans engagement.</p>
+        <div class="cta__actions">
+          <a href="mailto:[ADRESSE EMAIL]" class="pill pill--blue pill--lg magnetic">Nous écrire</a>
+          <a href="tel:[NUMÉRO DE TÉLÉPHONE]" class="pill pill--outline pill--lg magnetic">Nous appeler</a>
+        </div>
+        <dl class="contact-grid">
+          <div><dt>Email</dt><dd><a href="mailto:[ADRESSE EMAIL]" class="link">[ADRESSE EMAIL]</a></dd></div>
+          <div><dt>Téléphone</dt><dd><a href="tel:[NUMÉRO DE TÉLÉPHONE]" class="link">[NUMÉRO DE TÉLÉPHONE]</a></dd></div>
+          <div><dt>Adresse</dt><dd>[ADRESSE / VILLE]</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__cols">
+        <div>
+          <a href="index.html" class="footer__brand">MasterIA</a>
+          <p class="footer__about">Formations en intelligence artificielle et accompagnement des entreprises dans leur gestion.</p>
+        </div>
+        <div>
+          <h3>Découvrir</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Formations</h3>
+          <ul>
+            <li><a href="formations.html#programme">Programme</a></li>
+            <li><a href="formations.html#formats">Formats</a></li>
+            <li><a href="formations.html#faq">Questions fréquentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:[ADRESSE EMAIL]">[ADRESSE EMAIL]</a></li>
+            <li><a href="tel:[NUMÉRO DE TÉLÉPHONE]">[NUMÉRO DE TÉLÉPHONE]</a></li>
+            <li>[ADRESSE / VILLE]</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> MasterIA. Tous droits réservés.</p>
+        <a href="mentions-legales.html">Mentions légales &amp; confidentialité</a>
       </div>
     </div>
-    <div class="footer__bas">
-      <span>© <span class="annee">2026</span> Bourbaki64 – Entreprise individuelle · SIRET : 912 345 678 00014</span>
-      <span>TVA non applicable, art. 293 B du CGI</span>
-    </div>
-  </div>
-</footer>
-<script src="js/main.js"></script>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
