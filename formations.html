@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Formations IA — MasterIA</title>
+  <meta name="description" content="Cours et formations en intelligence artificielle pour particuliers, indépendants et équipes : du premier pas à la création d'agents IA.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Formations IA — MasterIA">
+  <meta property="og:description" content="Cours et formations en intelligence artificielle pour particuliers, indépendants et équipes : du premier pas à la création d'agents IA.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23000'/%3E%3Ccircle cx='12' cy='12' r='7' fill='none' stroke='%23f5f5f7' stroke-width='1.6'/%3E%3Ccircle cx='12' cy='12' r='2.4' fill='%232997ff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip" href="#contenu">Aller au contenu</a>
+
+  <!-- Navigation globale -->
+  <header class="gnav">
+    <div class="gnav__inner">
+      <a href="index.html" class="gnav__logo" aria-label="MasterIA, accueil">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/></svg>
+      </a>
+      <nav class="gnav__links" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html" aria-current="page">Formations</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="gnav__burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span></button>
+    </div>
+    <nav class="gnav__mobile" id="menu-mobile" aria-label="Menu mobile">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="formations.html" aria-current="page">Formations</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Bandeau d'annonce -->
+  <div class="strip">
+    <p><span class="new">Nouveau</span> Sessions de formation IA pour les équipes, en présentiel ou à distance. <a href="formations.html" class="link">Découvrir le programme&nbsp;›</a></p>
+  </div>
+
+  <!-- Navigation locale -->
+  <div class="lnav-wrap">
+    <div class="lnav">
+      <a href="#top" class="lnav__name">Formations</a>
+      <div class="lnav__right">
+        <a href="#programme" class="lnav__link">Programme</a>
+        <a href="#formats" class="lnav__link">Formats</a>
+        <a href="#faq" class="lnav__link">Questions</a>
+        <a href="contact.html" class="pill pill--blue magnetic">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <span id="contenu" tabindex="-1"></span>
+
+    <!-- HERO -->
+    <section class="hero hero--page" aria-label="Introduction">
+      <div class="hero__stage">
+        <canvas class="hero__canvas" data-shape="helix" data-y="0.36" aria-hidden="true"></canvas>
+        <div class="hero__halo" aria-hidden="true"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__label"><span class="mask"><span>Formations IA</span></span></p>
+        <h1 class="hero__title">
+          <span class="mask"><span>Apprenez l'IA.</span></span>
+          <span class="mask"><span><em>À votre rythme.</em></span></span>
+        </h1>
+        <p class="hero__sub"><span class="mask"><span>Du premier pas à la création de vos propres agents IA.</span></span></p>
+        <div class="hero__cta">
+          <span class="capsule">Individuel · Groupe · Entreprise</span>
+          <a href="contact.html" class="pill pill--blue pill--lg magnetic">Réserver une formation</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span>Défiler</span><i></i></div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="manifesto" aria-label="Pourquoi se former">
+      <div class="container">
+        <p class="eyebrow">Pourquoi se former</p>
+        <p class="manifesto__text" data-split>
+          L'IA ne remplace pas votre savoir-faire : elle le démultiplie. Encore faut-il savoir lui parler, choisir les bons outils et garder un regard critique sur ses réponses.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROGRAMME -->
+    <section class="program" id="programme" aria-label="Programme de formation">
+      <div class="program__pin">
+        <header class="program__head container">
+          <p class="eyebrow">Le programme</p>
+          <h2 class="h-display">Cinq modules.<br><span class="muted">Un parcours complet.</span></h2>
+        </header>
+        <div class="program__track">
+          <article class="course">
+            <span class="course__num">01</span>
+            <div>
+              <p class="course__level">Débutant</p>
+              <h3 class="course__title">Comprendre l'IA</h3>
+              <ul class="check-list">
+                <li>Ce qu'est (et n'est pas) l'IA</li>
+                <li>Les grandes familles d'outils</li>
+                <li>Limites, erreurs et bons usages</li>
+              </ul>
+            </div>
+          </article>
+          <article class="course">
+            <span class="course__num">02</span>
+            <div>
+              <p class="course__level">Débutant</p>
+              <h3 class="course__title">Maîtriser les assistants</h3>
+              <ul class="check-list">
+                <li>Rédiger des instructions efficaces</li>
+                <li>Écrire, résumer, traduire, analyser</li>
+                <li>Vérifier et améliorer les réponses</li>
+              </ul>
+            </div>
+          </article>
+          <article class="course">
+            <span class="course__num">03</span>
+            <div>
+              <p class="course__level">Intermédiaire</p>
+              <h3 class="course__title">Automatiser son travail</h3>
+              <ul class="check-list">
+                <li>Repérer les tâches automatisables</li>
+                <li>Relier ses outils entre eux</li>
+                <li>Construire ses premiers scénarios</li>
+              </ul>
+            </div>
+          </article>
+          <article class="course">
+            <span class="course__num">04</span>
+            <div>
+              <p class="course__level">Avancé</p>
+              <h3 class="course__title">Créer ses agents IA</h3>
+              <ul class="check-list">
+                <li>Concevoir un assistant spécialisé</li>
+                <li>Lui donner vos documents de référence</li>
+                <li>Le tester et le partager</li>
+              </ul>
+            </div>
+          </article>
+          <article class="course">
+            <span class="course__num">05</span>
+            <div>
+              <p class="course__level">Avancé</p>
+              <h3 class="course__title">Piloter par la donnée</h3>
+              <ul class="check-list">
+                <li>Analyser des tableaux avec l'IA</li>
+                <li>Créer des tableaux de bord lisibles</li>
+                <li>Décider à partir des chiffres</li>
+              </ul>
+            </div>
+          </article>
+          <article class="course course--cta">
+            <p class="product-label">Un parcours sur mesure</p>
+            <h3 class="course__title">Suivez un module ou le parcours complet.</h3>
+            <a href="contact.html" class="pill pill--blue magnetic">Demander le programme</a>
+          </article>
+        </div>
+        <div class="program__progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- FORMATS -->
+    <section class="manage" id="formats" aria-label="Formats de formation">
+      <div class="container">
+        <div class="panel">
+          <header class="panel__head reveal">
+            <p class="eyebrow">Les formats</p>
+            <h2 class="h-panel">Seul, en groupe ou en équipe.<br><span class="muted">Sur place ou à distance.</span></h2>
+            <p class="panel__lead">Chaque format s'adapte à votre niveau, à vos objectifs et à votre emploi du temps.</p>
+          </header>
+          <div class="tiles tiles--4">
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="16" r="7"/><path d="M10 40c1.5-8 6.5-12 14-12s12.5 4 14 12"/></svg>
+              <p class="tile__tag">Particuliers</p>
+              <h3 class="tile__stat">Cours individuel</h3>
+              <p class="tile__text">Un accompagnement personnalisé, centré sur vos objectifs et vos usages.</p>
+            </article>
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="18" r="5"/><circle cx="32" cy="18" r="5"/><circle cx="24" cy="13" r="5"/><path d="M6 38c1-5 5-8 10-8M42 38c-1-5-5-8-10-8M14 40c1-6 5-9 10-9s9 3 10 9"/></svg>
+              <p class="tile__tag">Indépendants</p>
+              <h3 class="tile__stat">Petit groupe</h3>
+              <p class="tile__text">Des sessions conviviales pour apprendre ensemble et partager les bonnes pratiques.</p>
+            </article>
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="12" width="32" height="26" rx="4"/><path d="M18 12V8h12v4M8 22h32"/></svg>
+              <p class="tile__tag">Entreprises</p>
+              <h3 class="tile__stat">Formation d'équipe</h3>
+              <p class="tile__text">Un programme construit pour vos métiers, dans vos locaux ou en ligne.</p>
+            </article>
+            <article class="tile">
+              <svg class="tile__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="24" rx="3"/><path d="M18 40h12M24 34v6"/></svg>
+              <p class="tile__tag">Partout</p>
+              <h3 class="tile__stat">À distance</h3>
+              <p class="tile__text">Des cours en visio interactifs, avec partage d'écran et exercices en direct.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÉANCE TYPE -->
+    <section class="method band-carbon" aria-label="Déroulé d'une séance">
+      <div class="container method__grid">
+        <div class="method__sticky">
+          <p class="eyebrow">Une séance type</p>
+          <h2 class="h-display">Comprendre.<br>Pratiquer.<br><span class="muted">Retenir.</span></h2>
+          <div class="method__line" aria-hidden="true"><i></i></div>
+        </div>
+        <ol class="method__steps">
+          <li class="step">
+            <span class="step__num">1 · Les bases</span>
+            <h3 class="step__title">L'essentiel, sans jargon</h3>
+            <p class="step__text">Une explication claire de la notion du jour et de son intérêt pour vous.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">2 · La démonstration</span>
+            <h3 class="step__title">Voir l'outil en action</h3>
+            <p class="step__text">Un cas concret, réalisé en direct, pour comprendre chaque étape.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">3 · La pratique</span>
+            <h3 class="step__title">Faire par vous-même</h3>
+            <p class="step__text">Des exercices sur vos propres sujets, avec un accompagnement au fil de l'eau.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">4 · Les ressources</span>
+            <h3 class="step__title">Repartir avec des outils</h3>
+            <p class="step__text">Fiches pratiques, modèles d'instructions et récapitulatif à garder sous la main.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- POUR QUI -->
+    <section class="audience" aria-label="Pour qui">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--dark">Pour qui ?</p>
+          <h2 class="h-display">Aucun prérequis.<br>Juste l'envie d'apprendre.</h2>
+        </header>
+        <div class="audience__grid">
+          <article class="pale-card reveal-card">
+            <p class="pale-card__label">Particuliers &amp; indépendants</p>
+            <h3 class="pale-card__title">Gagnez du temps au quotidien.</h3>
+            <ul class="pale-card__list">
+              <li>Salariés, entrepreneurs, étudiants, retraités</li>
+              <li>Débutants complets bienvenus</li>
+              <li>Horaires flexibles</li>
+            </ul>
+            <a href="contact.html" class="link link--cobalt">Réserver un cours ›</a>
+          </article>
+          <article class="pale-card pale-card--dark reveal-card">
+            <p class="pale-card__label">Entreprises &amp; équipes</p>
+            <h3 class="pale-card__title">Faites monter toute l'équipe en compétences.</h3>
+            <ul class="pale-card__list">
+              <li>Programme adapté à vos métiers</li>
+              <li>Règles d'usage et bonnes pratiques communes</li>
+              <li>Suivi après la formation</li>
+            </ul>
+            <a href="contact.html" class="link">Demander un devis ›</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-label="Questions fréquentes">
+      <div class="container faq__grid">
+        <header class="reveal">
+          <p class="eyebrow">Questions fréquentes</p>
+          <h2 class="h-panel">Vous vous demandez peut-être…</h2>
+        </header>
+        <div class="faq__list reveal-stagger">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Faut-il des connaissances techniques&nbsp;?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Non. Les premiers modules partent de zéro. Savoir utiliser un ordinateur et naviguer sur Internet suffit.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">De quel matériel ai-je besoin&nbsp;?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Un ordinateur avec une connexion Internet. Nous vous indiquons avant la formation les comptes gratuits à créer si nécessaire.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Quels outils d'IA sont abordés&nbsp;?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Les principaux assistants conversationnels du marché, ainsi que des outils d'automatisation et d'analyse. Le choix est adapté à vos besoins et à votre budget.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Les formations ont-elles lieu en présentiel&nbsp;?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Oui, en présentiel ou à distance selon votre préférence. Pour les entreprises, nous pouvons intervenir directement dans vos locaux.</p></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Combien de temps dure une formation&nbsp;?<span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__a"><p>Cela dépend du format et des modules choisis. Contactez-nous : nous construisons ensemble un parcours adapté à vos disponibilités.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" aria-label="Réserver">
+      <div class="cta__glow" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <p class="eyebrow">Prêt à commencer ?</p>
+        <h2 class="cta__title" data-fill>Votre premier cours.</h2>
+        <p class="cta__sub">Dites-nous votre niveau et vos objectifs : nous vous proposons le bon parcours.</p>
+        <div class="cta__actions">
+          <a href="contact.html" class="pill pill--blue pill--lg magnetic">Réserver une formation</a>
+          <a href="services.html" class="pill pill--outline pill--lg magnetic">Services entreprises</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__cols">
+        <div>
+          <a href="index.html" class="footer__brand">MasterIA</a>
+          <p class="footer__about">Formations en intelligence artificielle et accompagnement des entreprises dans leur gestion.</p>
+        </div>
+        <div>
+          <h3>Découvrir</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="formations.html">Formations</a></li>
+            <li><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Formations</h3>
+          <ul>
+            <li><a href="formations.html#programme">Programme</a></li>
+            <li><a href="formations.html#formats">Formats</a></li>
+            <li><a href="formations.html#faq">Questions fréquentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:[ADRESSE EMAIL]">[ADRESSE EMAIL]</a></li>
+            <li><a href="tel:[NUMÉRO DE TÉLÉPHONE]">[NUMÉRO DE TÉLÉPHONE]</a></li>
+            <li>[ADRESSE / VILLE]</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© <span data-year>2026</span> MasterIA. Tous droits réservés.</p>
+        <a href="mentions-legales.html">Mentions légales &amp; confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
